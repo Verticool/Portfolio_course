@@ -1,0 +1,296 @@
+@media (max-width: 1400px)
+    .container
+        width: 1000px
+    .sidepanel
+        display: none
+    .bio
+        padding-top: 70px
+        &__wrapper
+            column-gap: 50px
+
+@media (min-width: 900px) and (max-width: 1200px)
+    .container
+        width: 900px
+        padding: 0 10px
+    .bio
+        &__wrapper
+            grid-template: repeat(2,minmax(245px,auto))/350px 500px
+            column-gap: 10px
+            row-gap: 20px
+        &__skills
+            grid-template: repeat(2,1fr)/repeat(2,240px)
+            column-gap: 30px
+            padding-left: 15px
+            &__item
+                grid-template: 25px minmax(100px,auto)/25px minmax(200px,auto)
+                column-gap: 10px
+        &__image
+            img
+                object-fit: cover
+                height: 100%
+    .exp
+        &__grid-container
+            grid-template: 1fr 1fr / 300px
+            justify-content: center
+            padding-right: 200px
+    .prices
+        &__wrapper
+            grid-template: repeat(2, 300px) / repeat(auto-fit, 600px)
+            justify-content: center
+        &__side
+            padding-top: 0px
+    .portfolio
+        &__wrapper
+            grid-template: repeat(auto-fit, minmax(280px, 280px)) / repeat(auto-fit, minmax(280px, 280px))
+            justify-content: center
+        &__item
+            grid-area: auto
+            a
+                img
+                    object-fit: cover
+                    height: 100%
+    .scale
+        &__wrapper
+            grid-template: 1fr 1fr/1fr 1fr
+        &_line
+            width: 320px
+    .contacts
+        &__wrapper
+            padding: 0 10px
+            grid-template: 600px / 600px
+            justify-content: center
+        &__content
+            &__forms
+                grid-template: 45px 45px 100px / 240px 240px
+                &__input
+                    &_left
+                        grid-area: 1 / 1
+                    &_right
+                        grid-area: 1 / 2
+                &__textarea
+                    grid-area: 2 / 1 / 2 / 3
+                    height: 100%
+                &__btn
+                    margin-top: 10px
+                    grid-area: 4
+        &__photo
+            display: none
+@media (min-width: 600px) and (max-width: 900px)
+    .container
+        width: 600px
+        padding: 0 10px
+    .title
+        width: 300px
+        &_fz48
+            font-size: 26px
+            line-height: 39px
+    .menu
+        &__block
+            width: 250px
+        &__list
+            padding-left: 15px
+    .promo
+        background: url(../img/background_mobile.png) center/cover no-repeat
+    .bio
+        padding-top: 40px
+        &__descr
+            padding-top: 10px
+        &__wrapper
+            grid-template: 320px / 240px 300px
+            grid-auto-rows: minmax(120px,auto)
+            column-gap: 10px
+        &__skills
+            grid-area: 2 / 1 / 2 / 3
+            grid-template: 1fr / 1fr 1fr
+            grid-auto-rows: minmax(120px, auto)
+            column-gap: 15px
+            padding: 0 10px
+            &__item
+                column-gap: 15px
+        &__image
+            grid-row: 1
+            img
+                height: 100%
+                object-fit: cover
+    .exp
+        padding-top: 50px
+        &__grid-container
+            grid-template: 1fr 1fr / 300px
+            justify-content: center
+            padding-right: 200px
+    .skills
+        padding-top: 50px
+        &__promo
+            h2
+                padding-left: 7px
+    .scale
+        padding-top: 50px
+        &__wrapper
+            grid-template: 1fr 1fr/1fr
+        &_line
+            width: 320px
+    .portfolio
+        padding-top: 50px
+        &__wrapper
+            grid-template: repeat(auto-fit, minmax(280px, 280px)) / repeat(auto-fit, minmax(280px, 280px))
+            justify-content: center
+        &__item
+            grid-area: auto
+            a
+                img
+                    object-fit: cover
+                    height: 100%
+    .prices
+        padding-top: 50px
+        &__wrapper
+            grid-template: repeat(auto-fit, 300px) / repeat(auto-fit, 600px)
+            justify-content: center
+            row-gap: 10px
+        &__side
+            padding-top: 0px
+            &__item
+                height: 100%
+            .title
+                width: 225px
+    .contacts
+        &__wrapper
+            padding: 0 10px
+            grid-template: 600px / 300px
+            justify-content: center
+        &__content
+            &__forms
+                grid-template: 45px 45px 140px / 280px
+                &__input
+                    &_left
+                        grid-area: 1
+                    &_right
+                        grid-area: 2
+                &__textarea
+                    grid-area: 3
+                    height: 100%
+                &__btn
+                    margin: 0 auto
+                    margin-top: 10px
+                    grid-area: 4
+        &__photo
+            display: none
+        .title_fz48_pb0
+            font-weight: 700
+            font-size: 24px
+            line-height: 36px
+
+
+@media (min-width: 340px) and (max-width: 600px)
+    .container
+        width: 320px
+        padding: 0 10px
+    .title
+        width: 250px
+        &_fz48
+            font-size: 26px
+            line-height: 39px
+            &_mobile
+                font-size: 24px
+        &_fz16
+            font-size: 15px
+            &_mobile
+                line-height: 30px
+                &::before
+                    top: -7%
+
+    .menu
+        &__block
+            width: 250px
+        &__list
+            padding-left: 15px
+    .promo
+        background: url(../img/background.png) center/cover no-repeat
+        height: 100vh
+    .bio
+        padding-top: 40px
+        &__wrapper
+            grid-template: 340px / 300px
+            grid-auto-rows: minmax(120px,auto)
+        &__skills
+            padding-left: 10px
+            grid-template: 1fr / 1fr
+            grid-auto-rows: minmax(120px, auto)
+            &__item
+                column-gap: 10px
+        &__image
+            grid-row: 1
+            img
+                height: 100%
+                object-fit: cover
+    .exp
+        padding-top: 50px
+        &__grid-container
+            grid-template: 1fr 1fr / 300px
+        &__block
+            grid-template: 30px minmax(80px,auto)/250px
+            justify-content: center
+            padding-left: 0px
+            &::after
+                left: -10px
+            h3:before
+                left: -17px
+            &__item
+                grid-template: 25px minmax(80px,auto)/25px minmax(200px,300px)
+    .skills
+        padding-top: 50px
+        &__promo
+            h2
+                padding-left: 7px
+    .scale
+        padding-top: 50px
+        &__wrapper
+            grid-template: 1fr 1fr/1fr
+        &_line
+            width: 320px
+    .portfolio
+        padding-top: 50px
+        &__wrapper
+            grid-template: repeat(auto-fit, minmax(280px, 280px)) / repeat(auto-fit, minmax(280px, 280px))
+            justify-content: center
+        &__item
+            grid-area: auto
+            a
+                img
+                    object-fit: cover
+                    height: 100%
+    .prices
+        padding-top: 50px
+        &__wrapper
+            grid-template: repeat(auto-fit, 280px) / repeat(auto-fit, 280px)
+            row-gap: 10px
+        &__side
+            padding-top: 0px
+            &__item
+                height: 100%
+            .title
+                width: 225px
+    .contacts
+        &__wrapper
+            padding: 0 10px
+            grid-template: 600px / 300px
+        &__content
+            &__forms
+                grid-template: 45px 45px 140px / 280px
+                &__input
+                    &_left
+                        grid-area: 1
+                    &_right
+                        grid-area: 2
+                &__textarea
+                    grid-area: 3
+                    height: 100%
+                &__btn
+                    margin: 0 auto
+                    margin-top: 10px
+                    grid-area: 4
+        &__photo
+            display: none
+        .title_fz48_pb0
+            font-weight: 700
+            font-size: 24px
+            line-height: 36px

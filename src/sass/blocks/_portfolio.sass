@@ -1,0 +1,23 @@
+.portfolio
+    padding-top: 120px
+    &__promo
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        text-align: center
+    &__wrapper
+        display: grid
+        grid-template: repeat(2, 280px) / repeat(4, 280px)
+        grid-auto-rows: 280px
+        gap: 5px
+    &__item
+        a
+            img
+                width: 100%
+        &_3
+            grid-area: 1 / 4 / 2 / 4
+        &_2
+            grid-area: 2 / 1 / 2 / 3
+            img
+                height: 280px

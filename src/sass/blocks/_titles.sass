@@ -1,0 +1,52 @@
+.title
+    font-weight: 700
+    font-size: 48px
+    line-height: 60px
+    color: black
+    width: 530px
+    padding-bottom: 25px
+    &_fz48
+        &_pb0
+            padding-bottom: 0px
+    &_fz36
+        font-size: 36px
+        line-height: 60px
+    &_fz20
+        font-size: 20px
+        line-height: 30px
+    &_fz16
+        position: relative
+        font-size: 16px
+        line-height: 24px
+        padding-left: 10px
+        z-index: 2
+        @include before_circle
+        &_center
+            padding-bottom: 0px
+            @include before_circle
+            &::before
+                top: -25%
+                left: 51%
+                transform: translateX(-50%)
+        &_pb6
+            padding-bottom: 6px
+            &::before
+                top: -20%
+    &_fz14
+        font-size: 14px
+        line-height: 21px
+        width: 100%
+        &_p0
+            padding: 0px 0px
+        &-round
+            @include before_circle
+            &::before
+                top: -25%
+                left: 51%
+                transform: translateX(-50%)
+        &_leftround
+            @include before_circle_small
+            &::before
+                top: 3px
+                left: -20px
+                transform: translateX(-10%)

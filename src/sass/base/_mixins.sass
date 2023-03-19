@@ -1,0 +1,33 @@
+@mixin before_circle
+    &::before
+        content: ''
+        position: absolute
+        border-radius: 100%
+        width: 36px
+        height: 36px
+        background: $main-color
+        z-index: -1
+        top: -15%
+        left: 0%
+@mixin icon_circle
+    &::before
+        content: ''
+        position: absolute
+        border-radius: 100%
+        width: 36px
+        height: 36px
+        background: $main-color
+        z-index: -1
+        top: -2px
+        left: -15px
+@mixin before_circle_small
+    &::before
+        content: ''
+        position: absolute
+        border-radius: 100%
+        width: 15px
+        height: 15px
+        background: $main-color
+        z-index: -1
+        top: -15%
+        left: 0%
